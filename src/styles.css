@@ -1,9 +1,6 @@
-*{
-    margin: 0;
-}
-
 body{
     margin: 0;
+    padding: 0;
     background-color: var(--bg-color);
     display: grid;
     grid-template-rows: 1fr 7fr;
@@ -13,11 +10,17 @@ body{
 }
 
 :root{
-    --bg-color: brown;
+    --bg-color: rgb(47, 12, 12);
     --button-color: brown;
     --other-color: black;
     --text-color: white;
     --content-bg-color: grey;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 nav{
@@ -30,15 +33,35 @@ button{
     background-color: var(--other-color);
     color: var(--text-color);
     border-color: var(--button-color);
-    border-radius: 20px;;
+    border-radius: 20px;
     padding: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 #content{
-    background-color: var(--content-bg-color);
-    display: grid;
-    justify-items: center;
-    border-radius: 20px;
     width: 80vw;
+    background-color: var(--content-bg-color);
+    border-radius: 40px;
+    display: grid;
+    gap: 50px;
+    padding: 2rem 0;
+}
+
+#content > *{
+    width: 60vw;
+    margin: auto;
+}
+
+#content div:nth-child(n+2){
+    text-align: center;
+}
+
+#intro-text{
+    font-size: 8rem;
+    font-family: 'Brush Script MT', cursive;
+}
+
+[id*="title"]{
+    font-weight: bolder;
+    font-size: 2rem;
 }
