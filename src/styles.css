@@ -3,18 +3,19 @@ body{
     padding: 0;
     background-color: var(--bg-color);
     display: grid;
-    grid-template-rows: 1fr 7fr;
     gap: 10px;
     justify-items: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: "Suisse Intl", sans-serif;
+    color: var(--text-color)
 }
 
 :root{
     --bg-color: rgb(47, 12, 12);
     --button-color: brown;
     --other-color: black;
-    --text-color: white;
-    --content-bg-color: grey;
+    --text-color: rgb(223, 203, 203);
+    --content-bg-color: rgb(73, 43, 43);
+    --el-color: #434343;
 }
 
 ul{
@@ -35,7 +36,7 @@ button{
     border-color: var(--button-color);
     border-radius: 20px;
     padding: 20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: "Suisse Intl", sans-serif
 }
 
 #content{
@@ -43,7 +44,7 @@ button{
     background-color: var(--content-bg-color);
     border-radius: 40px;
     display: grid;
-    gap: 50px;
+    gap: 100px;
     padding: 2rem 0;
 }
 
@@ -52,16 +53,24 @@ button{
     margin: auto;
 }
 
-#content div:nth-child(n+2){
+#content > div:nth-child(n+2){
     text-align: center;
+    border: 2px solid var(--other-color);
+    border-radius: 40px;
+    padding: 2rem 0;
+    background-color: var(--el-color);
 }
 
-#intro-text{
+#intro{
     font-size: 8rem;
-    font-family: 'Brush Script MT', cursive;
+    font-family: "Heldane Display", serif;
+}
+
+[id*="text"] {
+    font-size: 2rem;
 }
 
 [id*="title"]{
     font-weight: bolder;
-    font-size: 2rem;
+    font-size: 4rem;
 }
