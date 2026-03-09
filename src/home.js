@@ -1,4 +1,5 @@
 import shit from "./img/gramps-eating-shit.png"
+export {loadHome}
 
 const loadSegment = (parent, item, text) => {
     let segment = document.createElement("div")
@@ -52,4 +53,4 @@ const loadHome = () => {
 
 
 }
-loadHome()
+// loadHome()
