@@ -1,8 +1,12 @@
 import "./styles.css";
 import {loadHome} from "./home.js";
 
-const home = document.querySelector("#home")
-const menu = document.querySelector("#menu")
-const about = document.querySelector("#about")
+const content = document.querySelector("#content")
+const homeButton = document.querySelector("#homebtn")
+const menuButton = document.querySelector("#menubtn")
+const aboutButton = document.querySelector("#aboutbtn")
 
-home.addEventListener("click", loadHome)
+loadHome()
+if (content.firstElementChild.id !== "home") {
+    homeButton.addEventListener("click", loadHome)
+}

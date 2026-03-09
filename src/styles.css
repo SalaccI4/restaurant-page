@@ -39,7 +39,7 @@ button{
     font-family: "Suisse Intl", sans-serif
 }
 
-#content{
+#home{
     width: 80vw;
     background-color: var(--content-bg-color);
     border-radius: 40px;
@@ -48,12 +48,12 @@ button{
     padding: 2rem 0;
 }
 
-#content > *{
+#home > *{
     width: 60vw;
     margin: auto;
 }
 
-#content > div:nth-child(n+2){
+#home > div:nth-child(n+2){
     text-align: center;
     border: 2px solid var(--other-color);
     border-radius: 40px;
