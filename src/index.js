@@ -6,7 +6,7 @@ const homeButton = document.querySelector("#homebtn")
 const menuButton = document.querySelector("#menubtn")
 const aboutButton = document.querySelector("#aboutbtn")
 
-loadHome()
+// loadHome()
 if (content.firstElementChild.id !== "home") {
     homeButton.addEventListener("click", loadHome)
 }

@@ -39,7 +39,7 @@ button{
     font-family: "Suisse Intl", sans-serif
 }
 
-#home{
+#home, #menu{
     width: 80vw;
     background-color: var(--content-bg-color);
     border-radius: 40px;
@@ -61,7 +61,23 @@ button{
     background-color: var(--el-color);
 }
 
-#intro{
+#menu-food-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 15px;
+}
+
+.menu-food{
+    padding: 20px;
+    background-color: var(--el-color);
+    border-radius: 40px;
+}
+
+#menu-title{
+    text-align: center;
+}
+
+#home-intro{
     font-size: 8rem;
     font-family: "Heldane Display", serif;
 }

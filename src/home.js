@@ -1,4 +1,4 @@
-import shit from "./img/gramps-eating-shit.png"
+import shit from "./img/home/gramps-eating-shit.png"
 export {loadHome}
 
 const loadSegment = (parent, item, text) => {
@@ -30,7 +30,7 @@ const loadHome = () => {
     const content = document.querySelector("#content")
         loadSegment(content, "home", "")
         const home = document.querySelector("#home")
-        loadSegment(home, "intro", "Taste the delicacies of our finest shit💩")
+        loadSegment(home, "home-intro", "Taste the delicacies of our finest shit💩")
         loadSegment(home, "review", "")
                 const review = document.querySelector("#review")
                 loadSegment(review, "review-text", "That is the tastiest shit I've ever had. An irreplicable experience that transcends all expectations -Gramps")
